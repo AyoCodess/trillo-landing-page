@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="09ebc0bd2480e212db529643fe6cfb78" rel="stylesheet">
+    <link rel="stylesheet" href="b4f5bbbd8e70b57a9a1f7980b5e7a83c">
+    <link rel="shortcut icon" type="image/png" href="7d250774e7a27fc00073068a57226673">
+
+    <title>trillo &mdash; Your all-in-one booking app</title>
+  </head>
+
+  <body>
+    <div>
+      <div class="container">
+        <header class="header">
+          Header part
+          <img src="31d81fc1ecf74138e077502a84cc31de" alt="trillo logo" class="logo">
+
+          <form action="#" class="search">
+            <input type="text" class="search__input" placeholder="Search hotels">
+            <button class="search__button">
+              <svg class="search__icon">
+                <use href="8ea8f7605332da6c4ba7dc0e029411ff"></use>
+              </svg>
+            </button>
+          </form>
+          <nav class="user-nav">
+            <div class="user-nav__icon-box">
+              <svg class="user-nav__icon">
+                <use href="7291aa87240bbe862aa63914072845a8"></use>
+              </svg>
+              <span class="user-nav"></span>
+            </div>
+            <div class="user-nav__icon-box">
+              <svg class="user-nav__icon">
+                <use href="1ea8ab89d0c5b8fb3530473591b5456e"></use>
+              </svg>
+          </div></nav>
+        </header>
+        <div class="content">
+          <nav class="sidebar">Navigation</nav>
+          <main class="hotel-view">Hotel View</main>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="525b4142fc7977e59a9baa27eee243a6"></script>

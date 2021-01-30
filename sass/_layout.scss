@@ -1,0 +1,33 @@
+.container {
+  max-width: 120rem; //allows container to decrease, we have 1200px, but it can decrease
+  margin: 8rem auto; //centers it, in its parent element
+  background-color: var(--color-grey-light-2);
+  box-shadow: var(--box-shadow-dark);
+  min-height: 50rem;
+}
+
+.header {
+  height: 7rem;
+  background-color: #fff;
+  border-bottom: var(--color-grey-light-2);
+
+  /// //parent of every element in the header
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+}
+
+.sidebar {
+  background-color: var(--color-grey-dark-1);
+  flex: 0 0 18%; // we don't want the element to grow if there is space, we don't want the element to shrink if there is no space, and we want to to 18% of the view port always. because its a % it will automatically adjust to the view port.
+}
+
+.hotel-view {
+  background-color: #fff;
+  background-color: rgb(255, 187, 0);
+  flex: 1; // so the element should grow as much as it can into all the available space which is 100-18
+}
