@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="0349afed15778b67f51faecec757f57f" rel="stylesheet">
+    <link rel="stylesheet" href="30f3ead0b0ba0f4ec6712b11c51fcdd8">
+    <link rel="shortcut icon" type="image/png" href="ecea402ac84dd136573869f4eca74ada">
+
+    <title>trillo &mdash; Your all-in-one booking app</title>
+  </head>
+
+  <body>
+    <div>
+      <div class="container">
+        <header class="header">
+          <img src="a7f4216cdc79931137f5f4a306258b17" alt="trillo logo" class="logo">
+
+          <form action="#" class="search">
+            <input type="text" class="search__input" placeholder="Search hotels">
+            <button class="search__button">
+              <svg class="search__icon">
+                <use href="9307fca89c98cafecaa61d439c833c95"></use>
+              </svg>
+            </button>
+          </form>
+          <nav class="user-nav">
+            <div class="user-nav__icon-box">
+              <svg class="user-nav__icon">
+                <use href="5f6cf4b6fb033c0c4f209bebe9c8cebc"></use>
+              </svg>
+              <span class="user-nav__notification">7</span>
+            </div>
+            <div class="user-nav__icon-box">
+              <svg class="user-nav__icon">
+                <use href="02d8ad7a0cdccf6608a6c6b60c378f7d"></use>
+              </svg>
+              <span class="user-nav__notification">13</span>
+            </div>
+            <div class="user-nav__user">
+              <img src="fcf452ffa5507d82996016a96491f37a" alt="ayo adesanya user photo" class="user-nav__user-photo">
+              <span class="user-nav__user-name">Ayo Adesanya</span>
+            </div>
+          </nav>
+        </header>
+        <div class="content">
+          <nav class="sidebar">
+            <ul class="side-nav">
+              <li class="side-nav__item">
+                <a href="#" class="side-nav__link">
+                  <svg class="side-nav__icon">
+                    <use href="1f1730712ab5d50bbf6e5a876676201d"></use>
+                  </svg>
+                  <span>Hotel</span>
+                </a>
+              </li>
+              <li class="side-nav__item">
+                <a href="#" class="side-nav__link">
+                  <svg class="side-nav__icon">
+                    <use href="fa7ec76f52572951ef4e81f5920f1434"></use>
+                  </svg>
+                  <span>Flight</span>
+                </a>
+              </li>
+              <li class="side-nav__item">
+                <a href="#" class="side-nav__link">
+                  <svg class="side-nav__icon">
+                    <use href="1bbb4e98691d1dc1e6306f93798d2708"></use>
+                  </svg>
+                  <span>Car Rental</span>
+                </a>
+              </li>
+              <li class="side-nav__item">
+                <a href="#" class="side-nav__link">
+                  <svg class="side-nav__icon">
+                    <use href="adb87f1382d6fb1e30cdb568d4b415b6"></use>
+                  </svg>
+                  <span>Tours</span>
+                </a>
+              </li>
+            </ul>
+            <div class="legal">
+              <a href="e17f8df3657975dca806b4df64bdf359"><span class="legal-text">
+                  Coded by &copy;2021 Ayo__Codes</span></a>
+            </div>
+          </nav>
+          <main class="hotel-view">Hotel View</main>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

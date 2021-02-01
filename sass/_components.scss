@@ -2,7 +2,7 @@
 
 .logo {
   height: 3.25rem;
-  margin: 3rem;
+  margin: 2rem;
 }
 
 /// SEARCH BOX
@@ -11,6 +11,7 @@
   background-color: rgb(255, 255, 255);
   flex: 0 0 40%;
 
+  // to center and align search bar and other child elements we must use flex in the parent container
   display: flex;
   align-items: center;
   justify-content: center;
@@ -32,6 +33,11 @@
       width: 100%;
       background-color: var(--color-grey-light-3);
     }
+
+    &::-webkit-input-placeholder {
+      font-weight: 100;
+      color: var(--color-grey-light-4);
+    }
   }
 
   &__input:focus + &__button {
@@ -44,31 +50,66 @@
 
     &:focus {
       outline: none;
+    }
 
-      &:active {
-        transform: translateY(2px);
-      }
+    &:active {
+      transform: translateY(2px);
     }
   }
 
   &__icon {
     height: 2rem;
     width: 2rem;
+    fill: var(--color-grey-dark-3);
   }
 }
 
 /// USER NAV
 
 .user-nav {
-  background-color: greenyellow;
+  align-self: stretch; // fills all available space
+
+  display: flex;
+  align-items: center;
+
+  /// this selector selects ALL the children and there children, going several levels deep in the user-nav class
+  & > * {
+    padding: 0 2rem;
+    cursor: pointer; //changes the design
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  & > *:hover {
+    background-color: var(--color-grey-light-2);
+  }
+
   &__icon-box {
+    position: relative; //if we want to perfectly set an element somewhere on the page, we must use position absolute on that element, then position relative on the parent.
   }
 
   &__icon {
     height: 2.25rem;
     width: 2.25rem;
+    fill: var(--color-grey-dark-2);
   }
   &__notification {
+    font-size: 0.8rem;
+    height: 1.75rem;
+    width: 1.75rem;
+    color: #fff;
+    border-radius: 100px; //just use a high number to get a perfect circle
+    background-color: var(--color-primary);
+    columns: #fff;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.1rem;
+
+    // flexbox also works with text
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   &__user {
@@ -78,8 +119,87 @@
     height: 3.75rem;
     width: 3.75rem;
     border-radius: 50%;
+    margin-right: 1rem;
   }
 
   &__user-name {
+  }
+}
+
+//NS
+
+// SIDE NAVIGATION
+
+.side-nav {
+  font-size: 1.4rem;
+  list-style: none;
+  margin-top: 3.5rem;
+
+  &__item {
+    position: relative;
+  }
+
+  /// this creates an element before the item div
+  &__item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 3px;
+    background-color: var(--color-primary);
+  }
+
+  &__link:link,
+  &__link:visited {
+    color: var(--color-grey-light-1);
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    padding: 1.5rem 3rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__icon {
+    height: 1.75rem;
+    width: 1.75rem;
+    margin-right: 2rem;
+    fill: currentColor;
+  }
+}
+
+//NS
+
+.legal {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  font-family: inherit;
+  text-align: center;
+  padding: 2.5rem;
+  color: var(--color-grey-dark-3);
+  width: 90%;
+  transition: all 0.2s;
+
+  a {
+    text-decoration: none;
+
+    &:visited {
+      color: var(--color-grey-dark-3);
+    }
+  }
+
+  .legal-text {
+    display: flex-end;
+    &:hover {
+      color: var(--color-primary);
+      width: 100%;
+      font-size: 1.5rem;
+    }
   }
 }
