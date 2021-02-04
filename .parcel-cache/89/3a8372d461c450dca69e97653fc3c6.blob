@@ -1,0 +1,20 @@
+/* Error: expected "{".
+ *     ,
+ * 338 |         cover
+ *     |              ^
+ *     '
+ *   sass/_components.scss 338:14  @import
+ *   sass/main.scss 2:9            root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: expected "{".\a     \2577 \a 338 \2502          cover\a     \2502               ^\a     \2575 \a   sass/_components.scss 338:14  @import\a   sass/main.scss 2:9            root stylesheet';
+}
+
+/*# sourceMappingURL=main.2245977c.css.map */

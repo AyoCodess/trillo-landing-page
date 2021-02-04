@@ -1,205 +1,387 @@
 /// lOGO
-
 .logo {
-  height: 3.25rem;
-  margin: 2rem;
+    height: 3.25rem;
+    margin: 2rem;
 }
 
 /// SEARCH BOX
-
 .search {
-  background-color: rgb(255, 255, 255);
-  flex: 0 0 40%;
-
-  // to center and align search bar and other child elements we must use flex in the parent container
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  &__input {
-    font-family: inherit;
-    font-size: inherit;
-    color: inherit;
-    background-color: var(--color-grey-light-2);
-    border: none;
-    padding: 0.7rem 2rem;
-    border-radius: 100px;
-    width: 90%;
-    transition: all 0.2s;
-    margin-right: -3.2rem;
-
-    &:focus {
-      outline: none;
-      width: 100%;
-      background-color: var(--color-grey-light-3);
+    background-color: rgb(255, 255, 255);
+    flex: 0 0 40%;
+    // to center and align search bar and other child elements we must use flex in the parent container
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__input {
+        font-family: inherit;
+        font-size: inherit;
+        color: inherit;
+        background-color: var(--color-grey-light-2);
+        border: none;
+        padding: 0.7rem 2rem;
+        border-radius: 100px;
+        width: 90%;
+        transition: all 0.2s;
+        margin-right: -3.2rem;
+        &:focus {
+            outline: none;
+            width: 100%;
+            background-color: var(--color-grey-light-3);
+        }
+        &::-webkit-input-placeholder {
+            font-weight: 100;
+            color: var(--color-grey-light-4);
+        }
     }
-
-    &::-webkit-input-placeholder {
-      font-weight: 100;
-      color: var(--color-grey-light-4);
+    &__input:focus + &__button {
+        background-color: var(--color-grey-light-3);
     }
-  }
-
-  &__input:focus + &__button {
-    background-color: var(--color-grey-light-3);
-  }
-
-  &__button {
-    border: none;
-    background-color: var(--color-grey-light-2);
-
-    &:focus {
-      outline: none;
+    &__button {
+        border: none;
+        background-color: var(--color-grey-light-2);
+        &:focus {
+            outline: none;
+        }
+        &:active {
+            transform: translateY(2px);
+        }
     }
-
-    &:active {
-      transform: translateY(2px);
+    &__icon {
+        height: 2rem;
+        width: 2rem;
+        fill: var(--color-grey-dark-3);
     }
-  }
-
-  &__icon {
-    height: 2rem;
-    width: 2rem;
-    fill: var(--color-grey-dark-3);
-  }
 }
 
 /// USER NAV
-
 .user-nav {
-  align-self: stretch; // fills all available space
-
-  display: flex;
-  align-items: center;
-
-  /// this selector selects ALL the children and there children, going several levels deep in the user-nav class
-  & > * {
-    padding: 0 2rem;
-    cursor: pointer; //changes the design
-    height: 100%;
+    align-self: stretch; // fills all available space
     display: flex;
     align-items: center;
-  }
-
-  & > *:hover {
-    background-color: var(--color-grey-light-2);
-  }
-
-  &__icon-box {
-    position: relative; //if we want to perfectly set an element somewhere on the page, we must use position absolute on that element, then position relative on the parent.
-  }
-
-  &__icon {
-    height: 2.25rem;
-    width: 2.25rem;
-    fill: var(--color-grey-dark-2);
-  }
-  &__notification {
-    font-size: 0.8rem;
-    height: 1.75rem;
-    width: 1.75rem;
-    color: #fff;
-    border-radius: 100px; //just use a high number to get a perfect circle
-    background-color: var(--color-primary);
-    columns: #fff;
-    position: absolute;
-    top: 1.5rem;
-    right: 1.1rem;
-
-    // flexbox also works with text
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  &__user {
-  }
-
-  &__user-photo {
-    height: 3.75rem;
-    width: 3.75rem;
-    border-radius: 50%;
-    margin-right: 1rem;
-  }
-
-  &__user-name {
-  }
+    /// this selector selects ALL the children and there children, going several levels deep in the user-nav class
+    & > * {
+        padding: 0 2rem;
+        cursor: pointer; //changes the design
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    & > *:hover {
+        background-color: var(--color-grey-light-2);
+    }
+    &__icon-box {
+        position: relative; //if we want to perfectly set an element somewhere on the page, we must use position absolute on that element, then position relative on the parent.
+    }
+    &__icon {
+        height: 2.25rem;
+        width: 2.25rem;
+        fill: var(--color-grey-dark-2);
+    }
+    &__notification {
+        font-size: 0.8rem;
+        height: 1.75rem;
+        width: 1.75rem;
+        color: #fff;
+        border-radius: 100px; //just use a high number to get a perfect circle
+        background-color: var(--color-primary);
+        columns: #fff;
+        position: absolute;
+        top: 1.5rem;
+        right: 1.1rem;
+        // flexbox also works with text
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__user {
+    }
+    &__user-photo {
+        height: 3.75rem;
+        width: 3.75rem;
+        border-radius: 50%;
+        margin-right: 1rem;
+    }
+    &__user-name {
+    }
 }
 
-//NS
-
+//NSNSNSNSNSNSNSNSNSNSNSNSNSNSNSNSNS
 // SIDE NAVIGATION
-
 .side-nav {
-  font-size: 1.4rem;
-  list-style: none;
-  margin-top: 3.5rem;
+    font-size: 1.4rem;
+    list-style: none;
+    margin-top: 3.5rem;
+    &__item {
+        position: relative;
+        /// adds something to all elements except the last one
+        &:not(:last-child) {
+            margin-bottom: 0.5rem;
+        }
+    }
+    /// this creates an element before the item div
+    &__item::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 3px;
+        background-color: var(--color-primary);
+        /// the normal state without any hover,so there is nothing to see., but when we hover, the animation scales to 1. (100%) scaleY means from top to bottom. it starts in the middle by default but you can change that using transform origin, setting it to bottom top etc...
+        transform: scaleY(0);
+        // transform-origin: bottom;
+        /// animates the time between before and hover.
+        /// the transform happens and takes 0.2 secs, then we 0.2 seconds again (the delay) until it starts to expand the width, the width then takes 0.4secs to expand across the item. cubic-bezier customizes the animation sequences
+        transition: transform 0.2s, cubic-bezier(1, 0, 0, 1) width 0.4s 0.2s,
+            background-color 0.1s; //click hover animation
+    }
+    /// does something only when the element is hovered
+    //IMPORTANT english: when you hover items, target there respective before elements with the styles below.
+    &__item:hover::before,
+    &__item--active::before {
+        transform: scaleY(1);
+        /// we want the animation to cover the whole width of the element when
+        width: 100%;
+    }
+    &__item:active::before {
+        background-color: var(--color-primary-light);
+    }
+    &__link:link,
+    &__link:visited {
+        color: var(--color-grey-light-1);
+        text-decoration: none;
+        text-transform: uppercase;
+        display: block;
+        padding: 1.5rem 3rem;
+        /// this specifies the stack order of an element, the element with the highest number is on top. so we give it 10, we also need to specify its position
+        position: relative;
+        z-index: 10;
+        display: flex;
+        align-items: center;
+    }
+    &__icon {
+        height: 1.75rem;
+        width: 1.75rem;
+        margin-right: 2rem;
+        fill: currentColor;
+    }
+}
 
-  &__item {
-    position: relative;
-  }
-
-  /// this creates an element before the item div
-  &__item::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 3px;
-    background-color: var(--color-primary);
-  }
-
-  &__link:link,
-  &__link:visited {
-    color: var(--color-grey-light-1);
-    text-decoration: none;
-    text-transform: uppercase;
-    display: block;
-    padding: 1.5rem 3rem;
-
+//NSNSNSNSNSNSNSNSNSNSNSNSNSNSNSNSNSNSNS
+.legal {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-
-  &__icon {
-    height: 1.75rem;
-    width: 1.75rem;
-    margin-right: 2rem;
-    fill: currentColor;
-  }
+    font-size: 1.2rem;
+    font-family: inherit;
+    text-align: center;
+    padding: 2.5rem;
+    color: var(--color-grey-dark-3);
+    width: 90%;
+    transition: all 0.2s;
+    a {
+        text-decoration: none;
+        &:visited {
+            color: var(--color-grey-dark-3);
+        }
+    }
+    .legal-text {
+        display: flex-end;
+        &:hover {
+            color: var(--color-primary);
+            width: 100%;
+            font-size: 1.5rem;
+        }
+    }
 }
 
-//NS
-
-.legal {
-  display: flex;
-
-  justify-content: center;
-  align-items: center;
-  font-size: 1.2rem;
-  font-family: inherit;
-  text-align: center;
-  padding: 2.5rem;
-  color: var(--color-grey-dark-3);
-  width: 90%;
-  transition: all 0.2s;
-
-  a {
-    text-decoration: none;
-
-    &:visited {
-      color: var(--color-grey-dark-3);
+//NSNSNSNSNSNSNSNSNSNSNSNSNSNSNSNSNSNSNSNS
+// GALLErY AREA
+.gallery {
+    display: flex;
+    &__photo {
+        width: 100%;
+        display: block; ///to avoid white space around it.
     }
-  }
+}
 
-  .legal-text {
-    display: flex-end;
+//NSNSNSNSNSNSNSNSNSNSNSNSNSNSNSNSNSNSNSN
+//MAIN AREA
+.overview {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--color-grey-light-2);
+    &__heading {
+        font-size: 2.25rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding: 1.5rem 3rem;
+    }
+    &__stars {
+        /// the element only occupies the space that it needs, and white space is the automatically calculated dynamic margin. very good trick to use with flex box when we want to create some space between elements.
+        margin-right: auto;
+        margin-left: 2rem;
+        display: flex; //we do this to remove the white space underneath the stars, as svgs act like text and inline elements that produces underneath white space, so we set there parent element to flexbox to remove it. now the icons will become flex items and center.
+    }
+    &__icon-star,
+    &__icon-location {
+        width: 1.75rem;
+        height: 1.75rem;
+        fill: var(--color-primary);
+    }
+    &__location {
+        display: flex;
+        align-items: center;
+        font-size: 1.2rem;
+    }
+    &__icon-location {
+        margin-right: 0.5rem;
+    }
+    &__rating {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--color-primary);
+        color: white;
+        margin-left: 3rem;
+        align-self: stretch; //expands to the full width of parent container
+        padding: 0 2.25rem;
+    }
+    &__rating-average {
+        font-size: 2.25rem;
+        font-weight: 300;
+        margin-top: -7px;
+        margin-bottom: -3px;
+    }
+    &__rating-count {
+        font-size: 0.8rem;
+        text-transform: uppercase;
+    }
+}
+
+//NSNSNSNSNSNSNSNSNSNSNSNSNSNSNSNSNS
+// BUTTON
+.btn-inline {
+    border: none;
+    color: var(--color-primary);
+    font-size: inherit;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 2px;
+    display: inline-block;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.2s;
     &:hover {
-      color: var(--color-primary);
-      width: 100%;
-      font-size: 1.5rem;
+        color: var(--color-grey-dark-1);
     }
-  }
+    &:focus {
+        outline: none;
+        ///we need to call the animation in the selector we want, in focus mode only (when clicked)
+        animation: pulsate 1s infinite;
+    }
 }
+
+@keyframes pulsate {
+    0% {
+        transform: scale(1);
+        box-shadow: none;
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.25);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: none;
+    }
+}
+
+//NSNSNSNSNSNSNSNSNSNSNSNSNSNSNS
+
+//PARAGRAPH
+
+.paragraph:not(:last-of-type) {
+    margin-bottom: 2rem;
+}
+
+//NSNSNSNSNSNSNSNSNSNSNSNSNSNSNS
+
+//LIST
+
+.list {
+    list-style: none;
+    display: flex;
+    margin: 3rem 0;
+    padding: 3rem 0;
+    border-top: var(--line);
+    border-bottom: var(--line);
+    flex-wrap: wrap;
+
+    &__item {
+        list-style: none;
+        flex: 0 0 50%;
+        margin-bottom: 0.7rem;
+    }
+
+    /// adding the icon arrow directly before each list element using css not html
+
+    &__item::before {
+        content: "";
+        display: inline-block;
+
+        /// for the svg to show, you need the height and width.
+        height: 1.3rem;
+        width: 1.3rem;
+        margin-right: 0.7rem;
+
+        /// for new browsers, we used MASKS, we cover area with a colour, then only show use area where the svg covers and the rest will be white.
+        background-color: var(--color-primary);
+        -webkit-mask-image: url(../img/chevron-thin-right.svg);
+
+        /// mask size behaves like background size and covers the area regardless of size adjustment. without it the mask would be fixed, not relative.
+        -webkit-mask-size: cover;
+
+        ///for older browsers
+        // background-image: url(../img/chevron-thin-right.svg);
+        // background-size: cover;
+    }
+}
+
+//NSNSNSNSNSNSNSNSNSNSNSNSNSNSNS
+
+// RECOMMEND
+
+.recommend {
+    display: flex;
+    font-size: 1.3rem;
+    color: var(--color-grey-dark-3);
+    align-items: center;
+
+    &__count {
+        margin-right: auto;
+    }
+
+    &__friends {
+        display: flex;
+    }
+
+    &__photo {
+        /// borderbox includes the padding and the border into the width and height of the element. We set back to the default so the images don't decrease in size when when we ad an border to it.
+        display: flex-end;
+        box-sizing: content-box;
+        height: 4rem;
+        width: 4rem;
+        border-radius: 50%;
+        border: 3px solid white;
+
+        &:not(:last-child) {
+            margin-right: -1.5rem;
+        }
+    }
+}
+
+//NSNSNSNSNSNSNSNSNSNSNSNSNSNSNSN
+
+// reviews

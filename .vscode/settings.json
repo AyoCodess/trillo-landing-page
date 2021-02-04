@@ -1,4 +1,8 @@
 {
   "git.ignoreLimitWarning": true,
-  "git.enabled": false
+  "git.enabled": false,
+  "editor.detectIndentation": false,
+  "prettier.disableLanguages": [
+    "html"
+  ]
 }
