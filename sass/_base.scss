@@ -61,5 +61,5 @@ body {
     );
     background-size: cover;
     background-repeat: no-repeat; //back is only covering the elements in tge body tag, and there are no apart from a word that is 16px high. test your self.
-    min-height: 150vh; // covers what ever the user can see, and moves dynamically
+    min-height: 100vh; // covers what ever the user can see, and moves dynamically
 }
