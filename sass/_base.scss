@@ -34,9 +34,11 @@ Grey dark 3: #999
 
 $bp--Largest: 75rem; //1200px
 $bp--large: 66.25rem; //1066px
-$bp--medium: 56.25rem; //900px
+$bp--medium: 56.25px; //900px
 $bp--small: 44.0625rem; //705px
 $bp--smallest: 42.6875rem; //641px
+$bp--tiny: 25rem; //641px
+
 /// GLOBALqueries
 * {
     margin: 0;
@@ -56,10 +58,6 @@ html {
 
     @media only screen and (max-width: $bp--small) {
         font-size: 50%;
-    }
-
-    @media only screen and (max-width: $bp--small) {
-        font-size: 62.5%;
     }
 }
 

@@ -23,6 +23,8 @@
 
     @media only screen and (max-width: $bp--small) {
         flex-wrap: wrap;
+        height: 12rem;
+        align-content: flex-start;
     }
 }
 
@@ -33,6 +35,10 @@
     @media only screen and (max-width: $bp--medium) {
         flex-direction: column;
     }
+
+    @media only screen and (max-width: $bp--small) {
+        flex-direction: column;
+    }
 }
 
 .sidebar {
@@ -41,6 +47,10 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    @media only screen and (max-width: $bp--small) {
+        flex-direction: column;
+    }
 }
 
 .hotel-view {

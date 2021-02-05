@@ -48,11 +48,6 @@ html {
     font-size: 50%;
   }
 }
-@media only screen and (max-width: 44.0625rem) {
-  html {
-    font-size: 62.5%;
-  }
-}
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -80,6 +75,8 @@ body {
 @media only screen and (max-width: 44.0625rem) {
   .search {
     order: 1;
+    flex: 0 0 100%;
+    background-color: var(--color-grey-light-2);
   }
 }
 .search__input {
@@ -170,17 +167,19 @@ body {
   font-size: 1.4rem;
   list-style: none;
   margin-top: 3.5rem;
+  display: flex;
 }
-@media only screen and (max-width: 56.25rem) {
+@media only screen and (max-width: 56.25px) {
   .side-nav {
     display: flex;
     margin-top: 0rem;
   }
 }
-@media only screen and (max-width: 42.6875rem) {
+@media only screen and (max-width: 44.0625rem) {
   .side-nav {
-    flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
+    flex: 1;
+    margin: auto;
   }
 }
 .side-nav__item {
@@ -189,7 +188,7 @@ body {
 .side-nav__item:not(:last-child) {
   margin-bottom: 0.5rem;
 }
-@media only screen and (max-width: 56.25rem) {
+@media only screen and (max-width: 56.25px) {
   .side-nav__item {
     display: flex;
     flex: 1;
@@ -229,9 +228,15 @@ body {
   display: flex;
   align-items: center;
 }
-@media only screen and (max-width: 56.25rem) {
+@media only screen and (max-width: 56.25px) {
   .side-nav__link:link, .side-nav__link:visited {
     padding: 2rem;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 44.0625rem) {
+  .side-nav__link:link, .side-nav__link:visited {
+    flex-direction: column;
     justify-content: center;
   }
 }
@@ -240,6 +245,11 @@ body {
   width: 1.75rem;
   margin-right: 2rem;
   fill: currentColor;
+}
+@media only screen and (max-width: 44.0625rem) {
+  .side-nav__icon {
+    margin: 0rem 0rem;
+  }
 }
 
 .legal {
@@ -254,7 +264,12 @@ body {
   width: 90%;
   transition: all 0.2s;
 }
-@media only screen and (max-width: 56.25rem) {
+@media only screen and (max-width: 56.25px) {
+  .legal {
+    display: none;
+  }
+}
+@media only screen and (max-width: 44.0625rem) {
   .legal {
     display: none;
   }
@@ -635,13 +650,20 @@ body {
 @media only screen and (max-width: 44.0625rem) {
   .header {
     flex-wrap: wrap;
+    height: 12rem;
+    align-content: flex-start;
   }
 }
 
 .content {
   display: flex;
 }
-@media only screen and (max-width: 56.25rem) {
+@media only screen and (max-width: 56.25px) {
+  .content {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 44.0625rem) {
   .content {
     flex-direction: column;
   }
@@ -653,6 +675,11 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+@media only screen and (max-width: 44.0625rem) {
+  .sidebar {
+    flex-direction: column;
+  }
 }
 
 .hotel-view {

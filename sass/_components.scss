@@ -15,6 +15,8 @@
 
     @media only screen and (max-width: $bp--small) {
         order: 1;
+        flex: 0 0 100%;
+        background-color: var(--color-grey-light-2);
     }
     &__input {
         font-family: inherit;
@@ -113,21 +115,22 @@
 ////////////////////////////////////////
 // SIDE NAVIGATION\\
 
-.sidebar {
-}
 .side-nav {
     font-size: 1.4rem;
     list-style: none;
     margin-top: 3.5rem;
+
+    display: flex;
 
     @media only screen and (max-width: $bp--medium) {
         display: flex;
         margin-top: 0rem;
     }
 
-    @media only screen and (max-width: $bp--smallest) {
-        flex-direction: row;
-        justify-content: center;
+    @media only screen and (max-width: $bp--small) {
+        justify-content: space-evenly;
+        flex: 1;
+        margin: auto;
     }
 
     &__item {
@@ -194,12 +197,22 @@
             padding: 2rem;
             justify-content: center;
         }
+
+        @media only screen and (max-width: $bp--small) {
+            flex-direction: column;
+            justify-content: center;
+        }
     }
+
     &__icon {
         height: 1.75rem;
         width: 1.75rem;
         margin-right: 2rem;
         fill: currentColor;
+
+        @media only screen and (max-width: $bp--small) {
+            margin: 0rem 0rem;
+        }
     }
 }
 
@@ -217,6 +230,10 @@
     transition: all 0.2s;
 
     @media only screen and (max-width: $bp--medium) {
+        display: none;
+    }
+
+    @media only screen and (max-width: $bp--small) {
         display: none;
     }
     a {
