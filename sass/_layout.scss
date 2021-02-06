@@ -44,9 +44,12 @@
 .sidebar {
     background-color: var(--color-grey-dark-1);
     flex: 0 0 18%; // we don't want the element to grow if there is space, we don't want the element to shrink if there is no space, and we want to to 18% of the view port always. because its a % it will automatically adjust to the view port.
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    // justify-content: space-between;
 
     @media only screen and (max-width: $bp--small) {
         flex-direction: column;

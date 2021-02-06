@@ -120,17 +120,17 @@
     list-style: none;
     margin-top: 3.5rem;
 
-    display: flex;
-
     @media only screen and (max-width: $bp--medium) {
-        display: flex;
         margin-top: 0rem;
+        display: flex;
+        flex-direction: row;
     }
 
     @media only screen and (max-width: $bp--small) {
         justify-content: space-evenly;
+
         flex: 1;
-        margin: auto;
+        // margin: auto;
     }
 
     &__item {
@@ -212,6 +212,7 @@
 
         @media only screen and (max-width: $bp--small) {
             margin: 0rem 0rem;
+            margin-bottom: 0.1rem;
         }
     }
 }
@@ -228,6 +229,7 @@
     color: var(--color-grey-dark-3);
     width: 90%;
     transition: all 0.2s;
+    margin-left: 1rem;
 
     @media only screen and (max-width: $bp--medium) {
         display: none;
@@ -506,8 +508,6 @@
     }
 
     @media only screen and (max-width: $bp--small) {
-        margin: auto;
-
         &:not(:last-child) {
             margin-bottom: 3rem;
         }
