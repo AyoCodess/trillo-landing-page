@@ -48,6 +48,11 @@ html {
     font-size: 50%;
   }
 }
+@media only screen and (max-width: 25rem) {
+  html {
+    font-size: 35%;
+  }
+}
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -293,9 +298,21 @@ body {
 .gallery {
   display: flex;
 }
+@media only screen and (max-width: 42.6875rem) {
+  .gallery {
+    flex-direction: column;
+    height: 10%;
+    width: 50%;
+  }
+}
 .gallery__photo {
   width: 100%;
   display: block;
+}
+@media only screen and (max-width: 42.6875rem) {
+  .gallery__photo {
+    object-fit: cover;
+  }
 }
 
 .overview {
@@ -503,6 +520,9 @@ body {
   }
 }
 @media only screen and (max-width: 44.0625rem) {
+  .review {
+    margin-left: 0rem;
+  }
   .review:not(:last-child) {
     margin-bottom: 3rem;
   }
@@ -713,7 +733,7 @@ body {
 }
 @media only screen and (max-width: 44.0625rem) {
   .description {
-    margin: auto;
+    margin-right: 0rem;
     margin-bottom: 3rem;
   }
 }

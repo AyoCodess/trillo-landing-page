@@ -59,6 +59,10 @@ html {
     @media only screen and (max-width: $bp--small) {
         font-size: 50%;
     }
+
+    @media only screen and (max-width: $bp--tiny) {
+        font-size: 35%;
+    }
 }
 
 /// BASELINE STYLES
