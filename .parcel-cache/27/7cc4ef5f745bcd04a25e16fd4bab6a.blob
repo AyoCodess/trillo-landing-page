@@ -318,7 +318,6 @@ body {
   display: flex;
   align-items: center;
   border-bottom: 1px solid var(--color-grey-light-2);
-  border-bottom: 0rem;
 }
 @media only screen and (max-width: 44.0625em) {
   .overview {
@@ -477,7 +476,7 @@ body {
   width: 1.3rem;
   margin-right: 0.7rem;
   background-color: var(--color-primary);
-  -webkit-mask-image: url(../img/chevron-thin-right.svg);
+  -webkit-mask-image: url(chevron-thin-right.39d595a5.svg);
   -webkit-mask-size: cover;
 }
 
@@ -852,3 +851,5 @@ body {
 }
 
 /*# sourceMappingURL=main.css.map */
+
+/*# sourceMappingURL=main.2245977c.css.map */

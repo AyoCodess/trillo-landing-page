@@ -297,7 +297,7 @@ body {
 
 .gallery {
   display: flex;
-  border: 0rem;
+  display: block;
 }
 @media only screen and (max-width: 42.6875em) {
   .gallery {
@@ -318,12 +318,12 @@ body {
   display: flex;
   align-items: center;
   border-bottom: 1px solid var(--color-grey-light-2);
-  border-bottom: 0rem;
 }
 @media only screen and (max-width: 44.0625em) {
   .overview {
     flex-direction: column;
     justify-content: space-evenly;
+    margin-bottom: 0rem;
   }
 }
 .overview__heading {
@@ -477,7 +477,7 @@ body {
   width: 1.3rem;
   margin-right: 0.7rem;
   background-color: var(--color-primary);
-  -webkit-mask-image: url(../img/chevron-thin-right.svg);
+  -webkit-mask-image: url(8d49eb48e01a1c96f7105bdaa0158c50);
   -webkit-mask-size: cover;
 }
 
