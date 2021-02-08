@@ -13,9 +13,9 @@ Grey dark 3: #999
 
 */
 :root {
-  --color-primary: #eb2f64;
-  --color-primary-light: #ff3366;
-  --color-primary-dark: #ba265d;
+  --color-primary: #1d82ff;
+  --color-primary-light: #1d82ff;
+  --color-primary-dark: #acccf3;
   --color-grey-light-1: #faf9f9;
   --color-grey-light-2: #f4f2f2;
   --color-grey-light-3: #f0eeee;
@@ -301,8 +301,6 @@ body {
 @media only screen and (max-width: 42.6875rem) {
   .gallery {
     flex-direction: column;
-    height: 10%;
-    width: 50%;
   }
 }
 .gallery__photo {
@@ -341,7 +339,7 @@ body {
 }
 @media only screen and (max-width: 42.6875rem) {
   .overview__heading {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
   }
 }
 .overview__stars {
@@ -505,6 +503,12 @@ body {
   margin-right: -1.5rem;
 }
 
+@media only screen and (max-width: 44.0625rem) {
+  .user-reviews {
+    width: 100%;
+  }
+}
+
 .review {
   background-color: white;
   box-shadow: var(--shadow-light);
@@ -525,6 +529,7 @@ body {
   }
   .review:not(:last-child) {
     margin-bottom: 3rem;
+    width: 100%;
   }
 }
 .review__text {
@@ -743,6 +748,77 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+@media only screen and (max-width: 25rem) {
+  .hotel-view {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 25rem) {
+  .overview {
+    order: 0;
+  }
+}
+
+@media only screen and (max-width: 25rem) {
+  .gallery {
+    order: 1;
+  }
+}
+
+@media only screen and (max-width: 25rem) {
+  .detail {
+    order: 2;
+  }
+}
+
+@media only screen and (max-width: 25rem) {
+  .cta {
+    order: 3;
+  }
+}
+
+@media only screen and (max-width: 44.0625rem) {
+  .overview__heading {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 44.0625rem) {
+  .overview {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  .overview__heading {
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 2rem;
+  }
+}
+
+@media only screen and (max-width: 416px) {
+  .overview__heading {
+    margin-top: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 476px) {
+  .overview__icon-star {
+    height: 4rem;
+    width: 4rem;
+  }
+}
+
+@media only screen and (max-width: 476px) {
+  .overview__location {
+    font-size: 2.5rem;
+    margin: 2.5rem 0rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

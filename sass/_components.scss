@@ -261,8 +261,12 @@
 
     @media only screen and (max-width: $bp--smallest) {
         flex-direction: column;
-        height: 10%;
-        width: 50%;
+    }
+
+    &__item {
+        // height: 100%;
+        // width: 100%;
+        // object-fit: cover;
     }
 
     &__photo {
@@ -287,6 +291,8 @@
 
         justify-content: space-evenly;
     }
+    //IMPORTANT
+
     &__heading {
         font-size: 2.25rem;
         font-weight: 300;
@@ -300,7 +306,7 @@
         }
 
         @media only screen and (max-width: $bp--smallest) {
-            font-size: 1.5rem;
+            font-size: 2.5rem;
         }
     }
     &__stars {
@@ -505,6 +511,12 @@
 
 // reviews
 
+.user-reviews {
+    @media only screen and (max-width: $bp--small) {
+        width: 100%;
+    }
+}
+
 .review {
     background-color: white;
     box-shadow: var(--shadow-light);
@@ -522,6 +534,7 @@
         margin-left: 0rem;
         &:not(:last-child) {
             margin-bottom: 3rem;
+            width: 100%;
         }
     }
 
