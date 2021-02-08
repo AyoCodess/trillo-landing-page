@@ -4,22 +4,22 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
-        <link rel="stylesheet" href="sass/main.css">
-        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+        <link href="0349afed15778b67f51faecec757f57f" rel="stylesheet">
+        <link rel="stylesheet" href="3a292de165bed4ee795e2339670f83b9">
+        <link rel="shortcut icon" type="image/png" href="ecea402ac84dd136573869f4eca74ada">
         
         <title>trillo &mdash; Your all-in-one booking app</title>
     </head>
     <body>
         <div class="container">
             <header class="header">
-                <img src="img/logo.png" alt="Ayo Adesanya logo" class="logo">
+                <img src="a7f4216cdc79931137f5f4a306258b17" alt="Ayo Adesanya logo" class="logo">
 
                 <form action="#" class="search">
                     <input type="text" class="search__input" placeholder="Search hotels">
                     <button class="search__button">
                         <svg class="search__icon">
-                            <use href="img/sprite.svg#icon-magnifying-glass"></use>
+                            <use href="dc63657046b4bc698a53adac2322a77c"></use>
                         </svg>
                     </button>
                 </form>
@@ -27,19 +27,19 @@
                 <nav class="user-nav">
                     <div class="user-nav__icon-box">
                         <svg class="user-nav__icon">
-                            <use href="img/sprite.svg#icon-bookmark"></use>
+                            <use href="56f8afdc465322c2f47b194baf76afa0"></use>
                         </svg>
                         <span class="user-nav__notification">7</span>
                     </div>
                     <div class="user-nav__icon-box">
                         <svg class="user-nav__icon">
-                            <use href="img/sprite.svg#icon-chat"></use>
+                            <use href="f13f8a425c51495c4a7579653793e6ed"></use>
                         </svg>
                         <span class="user-nav__notification">13</span>
                     </div>
                     <div class="user-nav__user">
-                      <a class="ayo" href="https://twitter.com/ayo__codes">
-                        <img src="img/ayo.png" alt="User photo" class="user-nav__user-photo">
+                      <a class="ayo" href="46c93ca025687070c506c5932dd4c1c7">
+                        <img src="973b6442dc24866bca8c598b301628f1" alt="User photo" class="user-nav__user-photo">
                         <span class="user-nav__user-name">Ayo__Codes</span></a>
                     </div>
                 </nav>
@@ -52,7 +52,7 @@
                         <li class="side-nav__item side-nav__item--active">
                             <a href="#" class="side-nav__link">
                                 <svg class="side-nav__icon">
-                                    <use href="img/sprite.svg#icon-home"></use>
+                                    <use href="970e6af6c69864edce3aa5041081df39"></use>
                                 </svg>
                                 <span>Hotel</span>
                             </a>
@@ -60,7 +60,7 @@
                         <li class="side-nav__item">
                             <a href="#" class="side-nav__link">
                                 <svg class="side-nav__icon">
-                                    <use href="img/sprite.svg#icon-aircraft-take-off"></use>
+                                    <use href="7cc1fce904fbe63d184ab332fabc84d5"></use>
                                 </svg>
                                 <span>Flight</span>
                             </a>
@@ -68,7 +68,7 @@
                         <li class="side-nav__item">
                             <a href="#" class="side-nav__link">
                                 <svg class="side-nav__icon">
-                                    <use href="img/sprite.svg#icon-key"></use>
+                                    <use href="f60ec97b0d62788b7f14fd87eda8510a"></use>
                                 </svg>
                                 <span>Car rental</span>
                             </a>
@@ -76,7 +76,7 @@
                         <li class="side-nav__item">
                             <a href="#" class="side-nav__link">
                                 <svg class="side-nav__icon">
-                                    <use href="img/sprite.svg#icon-map"></use>
+                                    <use href="0aeeeb0cc181f74d6d22f337afa61133"></use>
                                 </svg>
                                 <span>Tours</span>
                             </a>
@@ -93,13 +93,13 @@
                 <main class="hotel-view">
                     <div class="gallery">
                         <figure class="gallery__item">
-                            <img src="img/stockholm1.jpg" alt="Photo of hotel 1" class="gallery__photo">
+                            <img src="277ebbc9557318f06fc60b17e5f45018" alt="Photo of hotel 1" class="gallery__photo">
                         </figure>
                         <figure class="gallery__item">
-                            <img src="img/G.Spa-Spas-in-Singapore.jpg" alt="Photo of hotel 2" class="gallery__photo">
+                            <img src="c1e7a8d10d43f852511ae398ace6e4ce" alt="Photo of hotel 2" class="gallery__photo">
                         </figure>
                         <figure class="gallery__item">
-                            <img src="img/Deluxe-Double-Room-14-Hotel-Esplanade-Strandvagen-Stockholm2-480x270.jpg" alt="Photo of hotel 3" class="gallery__photo">
+                            <img src="6ec127d0cac16c2699108fed007c930a" alt="Photo of hotel 3" class="gallery__photo">
                         </figure>
                     </div>
 
@@ -110,25 +110,25 @@
 
                         <div class="overview__stars">
                             <svg class="overview__icon-star">
-                                <use href="img/sprite.svg#icon-star"></use>
+                                <use href="0f9de1d95e0b30ad9fbcb0f5c05842fc"></use>
                             </svg>
                             <svg class="overview__icon-star">
-                                <use href="img/sprite.svg#icon-star"></use>
+                                <use href="0f9de1d95e0b30ad9fbcb0f5c05842fc"></use>
                             </svg>
                             <svg class="overview__icon-star">
-                                <use href="img/sprite.svg#icon-star"></use>
+                                <use href="0f9de1d95e0b30ad9fbcb0f5c05842fc"></use>
                             </svg>
                             <svg class="overview__icon-star">
-                                <use href="img/sprite.svg#icon-star"></use>
+                                <use href="0f9de1d95e0b30ad9fbcb0f5c05842fc"></use>
                             </svg>
                             <svg class="overview__icon-star">
-                                <use href="img/sprite.svg#icon-star"></use>
+                                <use href="0f9de1d95e0b30ad9fbcb0f5c05842fc"></use>
                             </svg>
                         </div>
 
                         <div class="overview__location">
                             <svg class="overview__icon-location">
-                                <use href="img/sprite.svg#icon-location-pin"></use>
+                                <use href="3aa0f237436ee7006823352a5cd236aa"></use>
                             </svg>
                             <button class="btn-inline">Stockholm, Sweden</button>
                         </div>
@@ -162,10 +162,10 @@
                                     Angelica and 3 other friends recommend this hotel.
                                 </p>
                                 <div class="recommend__friends">
-                                    <img src="img/user-3.jpg" alt="Friend 1" class="recommend__photo">
-                                    <img src="img/user-4.jpg" alt="Friend 2" class="recommend__photo">
-                                    <img src="img/user-5.jpg" alt="Friend 3" class="recommend__photo">
-                                    <img src="img/user-6.jpg" alt="Friend 4" class="recommend__photo">
+                                    <img src="30bf3256e825441e2382745e062f22c7" alt="Friend 1" class="recommend__photo">
+                                    <img src="decd592006b323c74bb399312d6543e0" alt="Friend 2" class="recommend__photo">
+                                    <img src="1a76cc9bce480bb041014199d7ed7ada" alt="Friend 3" class="recommend__photo">
+                                    <img src="7eb86a95c875ea37fa6aa2dbaa3f8026" alt="Friend 4" class="recommend__photo">
                                 </div>
                             </div>
                         </div>
@@ -176,7 +176,7 @@
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi, totam, itaque officia ex.
                                 </blockquote>
                                 <figcaption class="review__user">
-                                    <img src="img/ben.jpg" alt="User 1" class="review__photo">
+                                    <img src="9e955e5eeb743c83f23b901b82ea1a76" alt="User 1" class="review__photo">
                                     <div class="review__user-box">
                                         <p class="review__user-name">David Becks</p>
                                         <p class="review__user-date">August 23rd, 2021</p>
@@ -190,7 +190,7 @@
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi.
                                 </blockquote>
                                 <figcaption class="review__user">
-                                    <img src="img/ang.jpg" alt="User 2" class="review__photo">
+                                    <img src="732e0f4e3c30b3b3f5112b1b2612b9e0" alt="User 2" class="review__photo">
                                     <div class="review__user-box">
                                         <p class="review__user-name">Angelica Jill</p>
                                         <p class="review__user-date">Sept 13th, 2021</p>

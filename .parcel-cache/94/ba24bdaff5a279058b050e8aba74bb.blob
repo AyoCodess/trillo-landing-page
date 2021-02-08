@@ -477,7 +477,7 @@ body {
   width: 1.3rem;
   margin-right: 0.7rem;
   background-color: var(--color-primary);
-  -webkit-mask-image: url(chevron-thin-right.39d595a5.svg);
+  -webkit-mask-image: url(8d49eb48e01a1c96f7105bdaa0158c50);
   -webkit-mask-size: cover;
 }
 
@@ -851,19 +851,8 @@ body {
   }
 }
 
-.ayo {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: black;
-}
-
 .user-nav__user-name {
   text-decoration: none;
-  align-items: center;
-  justify-content: center;
 }
 
 /*# sourceMappingURL=main.css.map */
-
-/*# sourceMappingURL=main.2245977c.css.map */

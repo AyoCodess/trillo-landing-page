@@ -852,16 +852,7 @@ body {
 }
 
 .ayo {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: black;
-}
-
-.user-nav__user-name {
-  text-decoration: none;
-  align-items: center;
-  justify-content: center;
+  list-style: none;
 }
 
 /*# sourceMappingURL=main.css.map */
