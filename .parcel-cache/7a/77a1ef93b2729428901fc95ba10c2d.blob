@@ -475,7 +475,7 @@ body {
   width: 1.3rem;
   margin-right: 0.7rem;
   background-color: var(--color-primary);
-  -webkit-mask-image: url(chevron-thin-right.39d595a5.svg);
+  -webkit-mask-image: url(73e35cdbcfdb6ac4f8db9fd189aa998c);
   -webkit-mask-size: cover;
 }
 
@@ -850,5 +850,3 @@ body {
 }
 
 /*# sourceMappingURL=main.css.map */
-
-/*# sourceMappingURL=main.2245977c.css.map */

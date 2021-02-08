@@ -750,32 +750,32 @@ body {
   align-items: center;
 }
 
-@media only screen and (max-width: 25rem) {
+@media only screen and (max-width: 42.6875rem) {
   .hotel-view {
     display: flex;
     flex-direction: column;
   }
 }
 
-@media only screen and (max-width: 25rem) {
+@media only screen and (max-width: 42.6875rem) {
   .overview {
     order: 0;
   }
 }
 
-@media only screen and (max-width: 25rem) {
+@media only screen and (max-width: 42.6875rem) {
   .gallery {
     order: 1;
   }
 }
 
-@media only screen and (max-width: 25rem) {
+@media only screen and (max-width: 42.6875rem) {
   .detail {
     order: 2;
   }
 }
 
-@media only screen and (max-width: 25rem) {
+@media only screen and (max-width: 42.6875rem) {
   .cta {
     order: 3;
   }
