@@ -2,4 +2,4 @@
 
 This landing page features:
 
--   CCS Advanced Animation
+-   CSS Advanced Animation
