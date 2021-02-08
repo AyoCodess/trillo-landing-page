@@ -309,7 +309,7 @@ body {
   flex: 1;
 }
 .gallery__photo {
-  max-width: 100%;
+  width: 100%;
   display: block;
   object-fit: cover;
 }
@@ -477,7 +477,7 @@ body {
   width: 1.3rem;
   margin-right: 0.7rem;
   background-color: var(--color-primary);
-  -webkit-mask-image: url(../img/chevron-thin-right.svg);
+  -webkit-mask-image: url(chevron-thin-right.39d595a5.svg);
   -webkit-mask-size: cover;
 }
 
@@ -865,3 +865,5 @@ body {
 }
 
 /*# sourceMappingURL=main.css.map */
+
+/*# sourceMappingURL=main.2245977c.css.map */
