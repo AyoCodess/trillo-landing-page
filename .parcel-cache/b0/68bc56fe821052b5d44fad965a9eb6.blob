@@ -475,7 +475,7 @@ body {
   width: 1.3rem;
   margin-right: 0.7rem;
   background-color: var(--color-primary);
-  -webkit-mask-image: url(../img/chevron-thin-right.svg);
+  -webkit-mask-image: url(8d49eb48e01a1c96f7105bdaa0158c50);
   -webkit-mask-size: cover;
 }
 
