@@ -313,12 +313,6 @@ body {
   display: block;
   object-fit: cover;
 }
-@media only screen and (max-width: 25em) {
-  .gallery__photo {
-    width: 100%;
-    height: 200px;
-  }
-}
 
 .overview {
   display: flex;
@@ -483,7 +477,7 @@ body {
   width: 1.3rem;
   margin-right: 0.7rem;
   background-color: var(--color-primary);
-  -webkit-mask-image: url(../img/chevron-thin-right.svg);
+  -webkit-mask-image: url(73e35cdbcfdb6ac4f8db9fd189aa998c);
   -webkit-mask-size: cover;
 }
 
