@@ -149,6 +149,10 @@
         font-size: 4rem;
         margin-top: 2rem;
     }
+
+    @media only screen and (max-width: 396px) {
+        font-size: 4rem;
+    }
 }
 
 .overview__heading {
@@ -162,11 +166,35 @@
         height: 4rem;
         width: 4rem;
     }
+
+    @media only screen and (max-width: 612px) {
+        height: 4rem;
+        width: 4rem;
+    }
 }
 
 .overview__location {
     @media only screen and (max-width: 476px) {
         font-size: 2.5rem;
         margin: 2.5rem 0rem;
+    }
+
+    @media only screen and (max-width: 612px) {
+        font-size: 2rem;
+        margin: 2rem 0rem;
+    }
+}
+
+.overview__rating {
+    &-average {
+        @media only screen and (max-width: 612px) {
+            font-size: 3.5rem;
+        }
+    }
+
+    &-count {
+        @media only screen and (max-width: 612px) {
+            font-size: 1.5rem;
+        }
     }
 }
