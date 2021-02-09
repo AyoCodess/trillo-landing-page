@@ -311,7 +311,7 @@ body {
 @media only screen and (max-width: 42.6875em) {
   .gallery {
     flex-direction: row;
-    max-height: 25%;
+    max-height: 100px;
   }
 }
 .gallery__item {
@@ -664,6 +664,7 @@ body {
 @media only screen and (max-width: 44.0625em) {
   .btn-inline-show {
     margin-top: 2rem;
+    font-size: 2.5rem;
   }
 }
 
