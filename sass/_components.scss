@@ -262,6 +262,7 @@
 
     @media only screen and (max-width: $bp--smallest) {
         flex-direction: row;
+        max-height: 25%;
     }
 
     &__item {
