@@ -65,6 +65,15 @@ html {
     }
 }
 
+.detail,
+.description,
+.paragraph,
+.review__text {
+    @media only screen and (max-width: $bp--small) {
+        font-size: 1.9rem;
+    }
+}
+
 /// BASELINE STYLES
 body {
     font-family: "Open Sans", sans-serif;
